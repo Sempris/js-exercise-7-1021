@@ -1,4 +1,4 @@
-// 13. Write a function named addDash that accepts a number as argument and insert dashes (-) between each two even numbers. 
+// 1. Write a function named addDash that accepts a number as argument and insert dashes (-) between each two even numbers. 
 //     Example :
 //     addDash(254680) -> output : 254-6-8-0
 //     addDash(1572453) -> output : 1572-453
@@ -15,7 +15,7 @@ function addDash(input) {
 console.log('---------- 1 ----------');
 console.log(addDash(254680));
 
-// 14. Write a function named freqElem that takes an array as an argument and finds the most frequent item of that array.
+// 2. Write a function named freqElem that takes an array as an argument and finds the most frequent item of that array.
 //     Example :
 //     freqElem([3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3]) -> output : "a, 5 times" 
 
@@ -36,7 +36,7 @@ let freqElem = input => {
 console.log('---------- 2 ----------');
 console.log(freqElem([3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3]));
 
-// 15. Write a function named changeCase that takes two arguments, first a string, second a callback function. 
+// 3. Write a function named changeCase that takes two arguments, first a string, second a callback function. 
 // Callback function swaps the case of each character.  
 //     Example :
 //     changeCase('The Quick Brown Fox', callback) -> output : 'tHE qUICK bROWN fOX'
@@ -51,7 +51,7 @@ let changeCase = (isString, callback) => {
 }
 console.log(changeCase('The Quick Brown Fox', callback));
 
-// 16. Write a function to sort the following array of objects by title value.
+// 4. Write a function to sort the following array of objects by title value.
 var library = [
     { author: 'Bill Gates', title: 'The Road Ahead', libraryID: 1254 },
     { author: 'Steve Jobs', title: 'Walter Isaacson', libraryID: 4264 },
@@ -68,7 +68,7 @@ function sortByKey(array, key) {
 console.log('---------- 4 ----------');
 console.log(sortByKey(library, 'title'));
 
-// 17. Create a function named createObject that takes two arrays as arguments. First array dishes should contain dish names,  and 
+// 5. Create a function named createObject that takes two arrays as arguments. First array dishes should contain dish names,  and 
 // second array calories should contain calorie values of dishes respectively.
 // Convert given arrays into object, with key value pairs using the Array method "reduce" and return the object as the result of your function.
 
@@ -88,7 +88,7 @@ let result = dishes.reduce((property, key, index) => ({ ...property, [key]: calo
 console.log('---------- 5 ----------');
 console.log(result);
 
-// 18. Write a JavaScript function named checkKey that takes two arguments, first an object, second a key property name.
+// 6. Write a JavaScript function named checkKey that takes two arguments, first an object, second a key property name.
 //     It will check whether an object contains given property.
 //     Example:
 //     hasKey({red: "#FF0000", green: "#00FF00", white: "#FFFFFF", blue: "#0000FF"}, "green") --> output : true
@@ -98,7 +98,7 @@ let hasKey = (input, check) => check in input;
 console.log('---------- 6 ----------');
 console.log(hasKey({ red: "#FF0000", green: "#00FF00", white: "#FFFFFF", blue: "#0000FF" }, "green"));
 
-// 19. Create a function named createCountry that takes an array of words as an argument and a string as a word suffix. 
+// 7. Create a function named createCountry that takes an array of words as an argument and a string as a word suffix. 
 // Use an array method, to add the suffix to the end of all words. It will return an array, and do not use loop to complete this task.
 //     Example:
 //     createCountry(['Fin', 'Ice', 'Thai', 'Po', 'Switzer'], 'land') --> output : ['Finland', 'Iceland', 'Thailand', 'Poland', 'Switzerland']
@@ -107,7 +107,7 @@ let createCountry = (input, suffix) => input.map(item => item + suffix);
 console.log('---------- 7 ----------');
 console.log(createCountry(['Fin', 'Ice', 'Thai', 'Po', 'Switzer'], 'land'));
 
-// 20. Create a function named arrayOfMultiples that takes two numbers as arguments (num, length)
+// 8. Create a function named arrayOfMultiples that takes two numbers as arguments (num, length)
 //     and returns an array of multiples of num until the array length reaches length.
 //     Example:
 //     arrayOfMultiples(7, 5) ➞ [7, 14, 21, 28, 35]
@@ -124,7 +124,7 @@ let arrayOfMultiples = (number, multiples) => {
 console.log('---------- 8 ----------');
 console.log(arrayOfMultiples(12, 10));
 
-// 21. Create a function named getTotalPrice that takes an array of objects (groceries) which calculates the total price and returns it as a number.
+// 9. Create a function named getTotalPrice that takes an array of objects (groceries) which calculates the total price and returns it as a number.
 //     A grocery object has a product, a quantity and a price.
 //     expected output : 10.7 
 
@@ -164,7 +164,7 @@ let getTotalPrice = input => {
 console.log('---------- 9 ----------');
 console.log(getTotalPrice(groceries));
 
-// 22. Write a function that inserts a white space between every instance of a lower character followed immediately by an upper character.
+// 10. Write a function that inserts a white space between every instance of a lower character followed immediately by an upper character.
 //     Example:
 //     insertWhitespace("SheWalksToTheBeach") ➞ "She Walks To The Beach"
 //     insertWhitespace("MarvinTalksTooMuch") ➞ "Marvin Talks Too Much"
